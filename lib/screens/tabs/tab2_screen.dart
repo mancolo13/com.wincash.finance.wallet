@@ -57,7 +57,7 @@ class _Tab2ScreenState extends State<Tab2Screen> {
                   ),
                   const SizedBox(height: 6),
                   Text(
-                    '$',
+                    r'$',
                     style: TextStyle(
                       fontSize: 14,
                       color: Colors.white.withValues(alpha: 0.7),
