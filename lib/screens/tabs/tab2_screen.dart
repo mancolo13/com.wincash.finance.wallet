@@ -7,10 +7,10 @@ class Tab2Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final budgets = [
-      {'name': 'Жилье & Аренда', 'spent': '\$1,200', 'limit': '\$1,200', 'pct': 1.0},
-      {'name': 'Продукты & Супермаркет', 'spent': '\$480', 'limit': '\$700', 'pct': 0.68},
-      {'name': 'Развлечения & Досуг', 'spent': '\$210', 'limit': '\$400', 'pct': 0.52},
-      {'name': 'Транспорт & Бензин', 'spent': '\$140', 'limit': '\$300', 'pct': 0.46},
+      {'name': 'Housing & Rent', 'spent': '\$1,200', 'limit': '\$1,200', 'pct': 1.0},
+      {'name': 'Groceries & Supermarket', 'spent': '\$480', 'limit': '\$700', 'pct': 0.68},
+      {'name': 'Entertainment & Leisure', 'spent': '\$210', 'limit': '\$400', 'pct': 0.52},
+      {'name': 'Transport & Fuel', 'spent': '\$140', 'limit': '\$300', 'pct': 0.46},
     ];
 
     return Scaffold(
@@ -32,11 +32,11 @@ class Tab2Screen extends StatelessWidget {
               child: const Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text('Месячный лимит расходов', style: TextStyle(color: Colors.white70, fontSize: 12)),
+                  Text('Monthly Spending Limit', style: TextStyle(color: Colors.white70, fontSize: 12)),
                   SizedBox(height: 6),
                   Text('\$2,450 / \$4,000 (61%)', style: TextStyle(color: AppTheme.primaryColor, fontSize: 24, fontWeight: FontWeight.bold)),
                   SizedBox(height: 4),
-                  Text('Осталось \$1,550 на 14 дней', style: TextStyle(color: Colors.white60, fontSize: 12)),
+                  Text('Remaining \$1,550 for 14 days', style: TextStyle(color: Colors.white60, fontSize: 12)),
                 ],
               ),
             ),
@@ -52,7 +52,7 @@ class Tab2Screen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Text(b['name'] as String, style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 14)),
-                      Text('${b["spent"]} из ${b["limit"]}', style: const TextStyle(color: Colors.white70, fontSize: 12)),
+                      Text('${b["spent"]} of ${b["limit"]}', style: const TextStyle(color: Colors.white70, fontSize: 12)),
                     ],
                   ),
                   const SizedBox(height: 8),

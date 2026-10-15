@@ -7,9 +7,9 @@ class Tab4Screen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final goals = [
-      {'title': 'Подушка безопасности', 'cur': '\$8,000', 'target': '\$10,000', 'pct': 0.8},
-      {'title': 'Путешествие в Японию', 'cur': '\$3,400', 'target': '\$4,500', 'pct': 0.75},
-      {'title': 'Новый рабочий сетап', 'cur': '\$1,800', 'target': '\$2,000', 'pct': 0.9},
+      {'title': 'Emergency Rainy Day Fund', 'cur': '\$8,000', 'target': '\$10,000', 'pct': 0.8},
+      {'title': 'Trip to Japan', 'cur': '\$3,400', 'target': '\$4,500', 'pct': 0.75},
+      {'title': 'New Ergonomic Work Setup', 'cur': '\$1,800', 'target': '\$2,000', 'pct': 0.9},
     ];
 
     return Scaffold(
@@ -28,7 +28,7 @@ class Tab4Screen extends StatelessWidget {
                 borderRadius: BorderRadius.circular(18),
                 border: Border.all(color: AppTheme.primaryColor.withValues(alpha: 0.3)),
               ),
-              child: const Text('Накопительные цели & Копилки', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
+              child: const Text('Savings Goals & Vaults', style: TextStyle(color: AppTheme.primaryColor, fontWeight: FontWeight.bold, fontSize: 16)),
             ),
             const SizedBox(height: 16),
             ...goals.map((g) => Container(
